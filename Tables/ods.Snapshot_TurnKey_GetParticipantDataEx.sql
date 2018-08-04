@@ -1,0 +1,40 @@
+CREATE TABLE [ods].[Snapshot_TurnKey_GetParticipantDataEx]
+(
+[TurnKey_GetParticipantDataExSK] [int] NOT NULL IDENTITY(1, 1),
+[SurveyID] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[recordid] [bigint] NULL,
+[started] [datetime] NULL,
+[completed] [datetime] NULL,
+[branched_out] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[over_quota] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[modified] [datetime] NULL,
+[campaign_status] [int] NULL,
+[culture] [nvarchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[http_referer] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[http_user_agent] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[remote_addr] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[remote_host] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_last_page] [int] NULL,
+[Participant_url] [nvarchar] (500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_last_page_number] [int] NULL,
+[Participant_modifier] [int] NULL,
+[Participant_device_type] [int] NULL,
+[Participant_ua_family] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_ua_majorver] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_os_name] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_os_family] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_long] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_lat] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_city] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_state] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_country] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Participant_iploc_zipcode] [nvarchar] (100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_CreatedOn] [datetime] NULL,
+[ETL_CreatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[ETL_UpdatedOn] [datetime] NULL,
+[ETL_UpdatedBy] [nvarchar] (200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[RecordEndDate] [datetime] NULL
+)
+GO
+ALTER TABLE [ods].[Snapshot_TurnKey_GetParticipantDataEx] ADD CONSTRAINT [PK__Snapshot__2A78C941928364DE] PRIMARY KEY CLUSTERED  ([TurnKey_GetParticipantDataExSK])
+GO

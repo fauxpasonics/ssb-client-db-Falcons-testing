@@ -1,0 +1,25 @@
+CREATE SCHEMA [stg]
+AUTHORIZATION [dbo]
+GO
+GRANT DELETE ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT EXECUTE ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT INSERT ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT SELECT ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT UPDATE ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT ALTER ON SCHEMA:: [stg] TO [db_apiETL]
+GO
+GRANT DELETE ON SCHEMA:: [stg] TO [svcssbrp]
+GO
+GRANT EXECUTE ON SCHEMA:: [stg] TO [svcssbrp]
+GO
+GRANT INSERT ON SCHEMA:: [stg] TO [svcssbrp]
+GO
+GRANT SELECT ON SCHEMA:: [stg] TO [svcssbrp]
+GO
+GRANT UPDATE ON SCHEMA:: [stg] TO [svcssbrp]
+GO
